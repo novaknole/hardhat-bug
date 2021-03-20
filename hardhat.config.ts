@@ -30,7 +30,7 @@ const config: HardhatUserConfig = {
   networks: {
     rinkeby: {
       url: 'https://rinkeby.eth.aragon.network',
-      accounts: [`0x188f20fbb60eaf10ca87088ace8d4c20bb5687848ee462044db4a9ad442dcc81`]
+      accounts: [`PUT HERE`]
     },
   },
 }
