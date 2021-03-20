@@ -1,0 +1,69 @@
+{
+  "address": "0xc9Ba0d0342bAA7d7490a1C104De373c4Fe825084",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "base",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6ce9816378290744585732ebeee5d80c9fbbc42c372b3bfd9b6900a10042472f",
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x94C34FB5025e054B24398220CBDaBE901bd8eE5e",
+    "contractAddress": null,
+    "transactionIndex": 5,
+    "gasUsed": "164626",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x9a1ab4c312693973244905bae605ee560b5f659920ebde20f008504500f342ba",
+    "transactionHash": "0x6ce9816378290744585732ebeee5d80c9fbbc42c372b3bfd9b6900a10042472f",
+    "logs": [],
+    "blockNumber": 8269425,
+    "cumulativeGasUsed": "370954",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "6e9150e89b881dbaefc04719d830c915",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"base\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/Test2.sol\":\"Test2\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":20000},\"remappings\":[]},\"sources\":{\"contracts/Test2.sol\":{\"content\":\"/*\\n * SPDX-License-Identifier:    GPL-3.0\\n */\\n\\npragma solidity 0.6.8;\\npragma experimental ABIEncoderV2;\\n\\n\\nabstract contract ERC1271 {\\n   \\n}\\n\\ncontract Test {\\n    \\n    constructor(uint x1, uint x2) public {\\n        uint x = 11112;\\n        _registerStandard(type(ERC1271).interfaceId); \\n    }\\n\\n    function _registerStandard(bytes4 _interfaceId) internal {\\n        \\n    }\\n\\n}\\n\\n\\ncontract Test2 {\\n    address public base;\\n\\n    constructor() public {\\n       base = address(new Test(10, 20));\\n    }\\n}\\n\\n\",\"keccak256\":\"0x9c96ef46c74e4608ae13ed055d25d6aeb38158771704384128aff9f8bc2428a8\",\"license\":\"GPL-3.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600a60146040516100219061006e565b61002c92919061007a565b604051809103906000f080158015610048573d6000803e3d6000fd5b50600080546001600160a01b0319166001600160a01b0392909216919091179055610088565b60b68061015083390190565b918252602082015260400190565b60ba806100966000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80635001f3b514602d575b600080fd5b60336047565b604051603e91906063565b60405180910390f35b60005473ffffffffffffffffffffffffffffffffffffffff1681565b73ffffffffffffffffffffffffffffffffffffffff9190911681526020019056fea2646970667358221220f2f90c909679030c49b8dfbd825a0c30b6e20adfda6342af7c22c450a594e04864736f6c634300060800336080604052348015600f57600080fd5b5060405160b638038060b6833981016040819052602a916048565b612b68603e60006001600160e01b03604516565b505050606a565b50565b600080604083850312156059578182fd5b505080516020909101519092909150565b603f8060776000396000f3fe6080604052600080fdfea26469706673582212206f41af241e3369d62885d6e7935fcbf1a2f827b45b3faf39de2614496de79e8a64736f6c63430006080033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80635001f3b514602d575b600080fd5b60336047565b604051603e91906063565b60405180910390f35b60005473ffffffffffffffffffffffffffffffffffffffff1681565b73ffffffffffffffffffffffffffffffffffffffff9190911681526020019056fea2646970667358221220f2f90c909679030c49b8dfbd825a0c30b6e20adfda6342af7c22c450a594e04864736f6c63430006080033",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 31,
+        "contract": "contracts/Test2.sol:Test2",
+        "label": "base",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}
