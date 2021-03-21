@@ -6,32 +6,15 @@ pragma solidity 0.6.8;
 pragma experimental ABIEncoderV2;
 
 
-abstract contract ERC1271 {
-   
-}
-
-contract Test {
-    
-    constructor(uint x1, uint x2) public {
-       
-    }
-
-    function _registerStandard(bytes4 _interfaceId) internal {
-        
-    }
-
-    function initialize() public {
-        uint x = 8282;
-        _registerStandard(type(ERC1271).interfaceId); 
-    } 
-}
+import "./T1.sol";
+import "./T2.sol";
 
 
 contract Test2 {
-    address public base;
 
-    constructor() public {
-       base = address(new Test(10, 20));
+    constructor(T1 first, T2 second) public {
+      
     }
+
 }
 
