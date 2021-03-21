@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
     deployer: 0,
   },
   etherscan: {
-    apiKey: "VXEABJ2N56AG5A5QDGAY3GIKM6IFSBP9JT"
+    apiKey: "YNEE235H7HTDQ5V5T1WAIDFRMJGIJND925"
   },
   networks: {
     rinkeby: {
